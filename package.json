@@ -4,8 +4,8 @@
   "description": "Welcome to the Flower repository! This collection includes illustrative examples and tutorials focused on web technologies such as HTML, SCSS, and JS.",
   "main": "main.js",
   "scripts": {
-    "build": "sass style.scss style.css",
-    "watch": "sass --watch style.scss:style.css",
+    "build": "node ./node_modules/sass/sass.js style.scss style.css",
+    "watch": "node ./node_modules/sass/sass.js --watch style.scss:style.css",
     "start": "live-server --port=5500 --no-browser .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
